@@ -37,8 +37,12 @@ int main(){
 	for(int c=0;c<i;c++){
 		cout<<"Numero "<<c+1<<": "<<*(*(n_plh+c))<<endl;
 	}
-	int *list3[3];
-	list3=mx(n_plh,3);
+	int m=3;
+	int *list3[m];
+	for (int c=0;c<m;c++){
+	    cout<<"Esto no va :("<<endl;
+	    cout<<*(*(mx(n_plh,m)+c));
+	}
 	cout<<*(*(list3+1));
 	
 	return 0;
