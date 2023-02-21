@@ -3,16 +3,17 @@
 #include <stdlib.h>
 using namespace std;
 
-int mx(int **nums,int c){
-	int res[c];
+int **(mx(int **nums,int c)){
+	int *res[c];
 	for (int p=0;p<c;p++){
-		res[c]=*(*(nums+p));
+		*(*(res+p))=*(*(nums+p));
+		cout<<*(*(res+p))<<endl;
 	}
 	return res;
 }
 
 int main(){
-	int i=10;
+	int i=4;
 	int *n_plh[i];
 	int stn;
 	int n1;
@@ -36,7 +37,9 @@ int main(){
 	for(int c=0;c<i;c++){
 		cout<<"Numero "<<c+1<<": "<<*(*(n_plh+c))<<endl;
 	}
-	cout<<mx(n_plh,3);
+	int *list3[3];
+	list3=mx(n_plh,3);
+	cout<<*(*(list3+1));
 	
 	return 0;
 }
