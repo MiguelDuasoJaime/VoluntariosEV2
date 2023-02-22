@@ -40,7 +40,7 @@ int media(int **nums, int c){
 }
 
 int main(){
-	int i=4;
+	int i=10;
 	int *n_plh[i];
 	int stn;
 	int n1;
